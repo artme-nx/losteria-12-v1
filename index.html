@@ -180,6 +180,10 @@ footer a:hover{color:var(--cream)}
   .menu-card{padding:38px 26px}
   .pad{padding:80px 0}
   .hero-tag{font-size:1.2rem}
+  /* nowrap valja za kratke menu-naslove, ali FAQ pitanja dijele istu klasu i
+     na mobitelu se ne mogu prelomiti -> 98px horizontalnog scrolla. */
+  .menu-cat-head{flex-wrap:wrap}
+  .menu-cat-head h3{white-space:normal}
 }
 @media (prefers-reduced-motion:reduce){
   .reveal{opacity:1 !important; transform:none !important}
