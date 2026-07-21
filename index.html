@@ -23,7 +23,9 @@
   --ink-soft:#54473A; --gold:#A8843F; --line:rgba(42,33,26,.16);
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+/* NE smooth: Lenis sam animira scroll preko window.scrollTo(); nativni smooth
+   bi svaki taj frame dodatno usporio pa scroll puzi i ne stigne do cilja. */
+html{scroll-behavior:auto}
 body{
   background:var(--cream); color:var(--ink);
   font-family:'EB Garamond',Georgia,serif; font-size:18px; line-height:1.7;
